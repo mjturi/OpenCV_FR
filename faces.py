@@ -13,8 +13,11 @@ while True:
     for (x, y, w, h) in faces:
         print(x, y, w, h)
         roi_gray = gray[y:y+h, x:x+w]
+        roi_color = frame[y:y + h, x:x + w]
         img_item = 'my_img.png'
+
         cv2.imwrite(img_item, roi_gray)
+
     cv2.imshow('frame', frame)
     if cv2.waitKey(20) & 0xFF == ord('q'):
         break
