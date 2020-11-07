@@ -18,7 +18,7 @@ while True:
 
         cv2.imwrite(img_item, roi_gray)
 
-        color = (225, 0, 0)
+        color = (200, 50, 0)
         stroke = 3
         end_cord_x = x+w
         end_cord_y = y+h
